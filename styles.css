@@ -119,6 +119,7 @@ a:focus {
 
 main {
   width: min(1120px, calc(100% - 2rem));
+  max-width: calc(100% - 2rem);
   margin: 0 auto;
 }
 
@@ -163,6 +164,12 @@ h3 {
 
 p {
   margin: 0;
+}
+
+p,
+li,
+a {
+  overflow-wrap: break-word;
 }
 
 .lead {
@@ -372,6 +379,7 @@ p {
 .policy-body {
   display: grid;
   gap: 1.2rem;
+  width: 100%;
   max-width: 56rem;
   padding-bottom: 5rem;
 }
@@ -405,6 +413,7 @@ p {
 }
 
 .support-item {
+  min-width: 0;
   padding: 1rem;
   border: 1px solid var(--line);
   border-radius: 1rem;

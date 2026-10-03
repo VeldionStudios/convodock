@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Guide | ConvoDock</title>
+    <meta
+      name="description"
+      content="ConvoDock user guide for Android notification access, app choices, contacts, linked identities, replies, attachments, privacy controls and purchases."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+          <a class="brand" href="index.html" aria-label="ConvoDock home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 108 108" fill="none">
+                <rect width="108" height="108" rx="24" fill="#04131C" />
+                <circle cx="54" cy="54" r="45" fill="#071F2C" />
+                <path d="M18 36c0-12 9-20 23-20h15c13 0 22 9 22 21v7c0 13-9 21-22 21h-6L33 83l4-17c-11-4-19-12-19-23v-7Z" fill="#25D8CF" />
+                <path d="M63 72l25 21-10-23Z" fill="#2E8CFF" />
+                <path d="M38 50c0-12 10-20 23-20h11c13 0 22 9 22 21v7c0 12-9 20-22 20H60c-13 0-22-8-22-20v-8Z" fill="#2E8CFF" />
+                <path d="M25 34c3-8 11-12 21-12h10c6 0 12 2 16 6-11-3-22-3-31-1-8 1-13 3-16 7Z" fill="#FFFFFF" opacity=".18" />
+                <path d="M44 48c3-7 9-10 17-10h10c5 0 11 2 15 6-9-3-18-3-27-1-6 1-12 2-15 5Z" fill="#FFFFFF" opacity=".16" />
+              </svg>
+            </span>
+            ConvoDock
+          </a>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="user-guide.html" aria-current="page">User Guide</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html">Support</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="policy-hero">
+          <p class="eyebrow">User Guide</p>
+          <h1>Using ConvoDock</h1>
+          <p class="policy-meta">
+            A practical Android guide for setting up ConvoDock, organising captured messages and understanding what the app can and cannot do.
+          </p>
+        </div>
+
+        <article class="policy-body">
+          <section>
+            <h2>Before you start</h2>
+            <p>
+              ConvoDock is an Android-first, local-first inbox for supported messaging notifications. It works from notification content that Android makes available after you grant notification access.
+            </p>
+            <ul>
+              <li>ConvoDock does not import old chat history.</li>
+              <li>ConvoDock does not provide delivery status, read receipts or guaranteed reply delivery.</li>
+              <li>ConvoDock does not sign in to WhatsApp, Messenger, Telegram, Signal, Instagram or other messaging services.</li>
+              <li>ConvoDock cannot show content that the original notification hides.</li>
+              <li>Quick replies work only when the original notification exposes an active Android reply action.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Set up notification access</h2>
+            <p>
+              Open ConvoDock and follow the setup prompts. When Android opens notification-access settings, find ConvoDock and turn its toggle on. This allows ConvoDock to read supported messaging notifications as they arrive.
+            </p>
+            <p>
+              If messages do not appear, check that the original messaging app is allowed to show message notifications. ConvoDock can only capture notifications that Android receives and exposes.
+            </p>
+          </section>
+
+          <section>
+            <h2>Choose connected apps</h2>
+            <p>
+              Use the Apps area in ConvoDock to choose which source apps are included. Pausing a source app stops ConvoDock from capturing new notifications from that app. Existing local records remain until you delete them.
+            </p>
+            <p>
+              Supported-app wording should be treated as notification-derived support. Real-world behaviour can vary by Android version, source app version, notification settings and device manufacturer.
+            </p>
+          </section>
+
+          <section>
+            <h2>Reduce duplicate alerts</h2>
+            <p>
+              If you allow ConvoDock notifications, ConvoDock can alert you when captured messages arrive. To avoid seeing both ConvoDock alerts and source-app pop-ups, open the source app's Android notification settings and turn off pop-ups or other alert types you no longer want.
+            </p>
+            <p>
+              This is optional. ConvoDock does not silently change another app's notification settings.
+            </p>
+          </section>
+
+          <section>
+            <h2>Read the inbox</h2>
+            <p>
+              The Chats screen shows recent notification-derived conversations. Each row can show the sender or group name, source app badge, preview, timestamp and unread count where available.
+            </p>
+            <ul>
+              <li>Use search to find locally captured conversations and message text.</li>
+              <li>Use filters such as unread or favourites to narrow the inbox.</li>
+              <li>If an attachment preview is unavailable, open the original app from the message fallback.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Organise contacts and linked identities</h2>
+            <p>
+              ConvoDock lets you build your own local contact list. You can create contacts manually, import phone contacts if you choose, and link source-app identities that belong to the same person.
+            </p>
+            <p>
+              For example, if one person appears as "Jon" in Messages and "Riggs" in WhatsApp, you can link both identities to one ConvoDock contact. The contact view can then show messages from the linked identities while still indicating which source app each message came from.
+            </p>
+            <ul>
+              <li>Use linked identities only when you are sure two source-app identities belong to the same person or group.</li>
+              <li>You can pause a linked identity for a contact without deleting the contact.</li>
+              <li>Contact photos are local to ConvoDock unless they are imported from your phone contacts or exposed by a notification.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Reply or open the original app</h2>
+            <p>
+              When Android provides an active quick-reply action, ConvoDock can send a reply through that original notification. If the action has expired, been cancelled or is unavailable, ConvoDock should offer an "Open in original app" fallback.
+            </p>
+            <p>
+              Do not treat an in-app reply button as a guarantee that every messaging service supports replies in every situation. Physical-device testing is still the only reliable way to confirm source-app behaviour.
+            </p>
+          </section>
+
+          <section>
+            <h2>Photos, links and attachments</h2>
+            <p>
+              ConvoDock uses best-effort attachment capture. If Android exposes a readable image or media URI in a notification, ConvoDock can try to copy it into encrypted local storage. If Android or the source app denies access, ConvoDock shows an attachment placeholder and an original-app fallback.
+            </p>
+            <p>
+              You can also share photos, files and links into ConvoDock manually using Android's share sheet. Manual share imports are more reliable than automatic notification attachment capture because they are started by you.
+            </p>
+          </section>
+
+          <section>
+            <h2>Privacy controls</h2>
+            <p>
+              Use Settings in ConvoDock to open the privacy policy, delete local app data and manage notification access. Delete all ConvoDock data removes captured messages, copied attachments, contacts and local identity links from the device.
+            </p>
+            <p>
+              Disconnecting notification access stops future capture but does not automatically delete existing local records. Use the delete controls, clear app storage or uninstall ConvoDock to remove local data.
+            </p>
+          </section>
+
+          <section>
+            <h2>Trial, purchase and restore</h2>
+            <p>
+              ConvoDock includes a seven-day local trial. The trial does not ask for payment details, does not auto-renew and cannot automatically charge when it ends.
+            </p>
+            <p>
+              After the trial, full access requires the optional lifetime unlock through Google Play. The intended lifetime price is GBP 4.99, with Google Play supplying the final displayed local price. Use Restore Purchases after reinstalling, clearing app data or changing Android phones.
+            </p>
+          </section>
+
+          <section>
+            <h2>Troubleshooting</h2>
+            <ul>
+              <li><strong>No messages appear:</strong> enable notification access for ConvoDock and confirm the source app is allowed to show message notifications.</li>
+              <li><strong>Reply is unavailable:</strong> open the original app; the notification reply action may have expired or may not be supported by that notification.</li>
+              <li><strong>Duplicate alerts appear:</strong> keep ConvoDock notifications on, then turn off source-app pop-ups in Android settings if you want only ConvoDock alerts.</li>
+              <li><strong>Attachment is missing:</strong> the original notification may not have exposed a readable preview or file URI.</li>
+              <li><strong>Notification access was revoked:</strong> reopen Android notification-access settings and turn ConvoDock back on.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Support</h2>
+            <p>
+              For help, contact Veldion Studios at <a href="mailto:VeldionStudios@gmail.com">VeldionStudios@gmail.com</a>. Include your Android version, phone model, ConvoDock version and a short description of what happened. Do not send private message contents unless they are necessary for the support request.
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <span>© 2026 Veldion Studios</span>
+          <div class="footer-links">
+            <a href="user-guide.html">User Guide</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
